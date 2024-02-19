@@ -224,7 +224,7 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-color: #e05306;
+    background-color: #000; /** #e05306 **/ 
     height: auto;
     padding-top: 15px;
     padding-bottom: 5px;
@@ -263,6 +263,10 @@ button {
 
 .menu_text li a {
     color: #ffffff;
+}
+.menu_text li a:hover {
+    color: #e05306;
+	transition: 0.5s;
 }
 
 .banner_section {
@@ -1037,6 +1041,11 @@ a {
     outline: none !important;
 }
 
+a:hover{
+	color: #e05306;
+	transition: 0.3s;
+}
+
 .container-fluid video {
 	padding-top: 0px;
 }
@@ -1108,4 +1117,8 @@ img.client-logo{
 
 .content:hover >*{
 	transform: translateY(0px);
+}
+
+img.burger:hover{
+	background-image: url("images/togglehover.png")
 }

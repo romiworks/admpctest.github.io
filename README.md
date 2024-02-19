@@ -1,2 +1,0 @@
-# admpctest.github.io
-test

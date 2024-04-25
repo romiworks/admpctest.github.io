@@ -100,25 +100,25 @@ function MM_swapImage() { //v3.0
                      <div class="input_main">
                         <div class="container">
                            <h2 class="request_text">GET IN TOUCH WITH US</h2>
-                           <form action="/action_page.php">
+                           <form action="https://api.web3forms.com/submit" method="POST">
                               <div class="form-group">
-                                 <input type="text" class="email-bt" placeholder="Full Name" name="Name">
+                                 <input type="hidden" name="access_key" value="0b6d91ec-3f6b-42e4-a7b9-c384b1de805e">
+                                 <input type="hidden" name="subject" value="New Ad-Impact® Client Inquiry">
+                                 <input type="text" class="email-bt" placeholder="Full Name" name="Name" required>
                               </div>
                               <div class="form-group">
-                                 <input type="text" class="email-bt" placeholder="Email" name="Email">
+                                 <input type="text" class="email-bt" placeholder="Email" name="Email" required>
                               </div>
                               <div class="form-group">
-                                 <input type="text" class="email-bt" placeholder="Phone" name="Email">
+                                 <input type="text" class="email-bt" placeholder="Phone" name="Phone" required>
                               </div>
-                           <form action="/action_page.php">
                               <div class="form-group">
-                                 <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="text"></textarea>
+                                 <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="text" required></textarea>
                               </div>
-                           </form>
+                              <button type="submit" >SEND</button>
                            </form>
                         </div>
                      </div>
-                     <div class="send_bt"><a href="#">SEND</a></div>
                   </div>
                </div>
                <div class="col-md-6 padding_0">

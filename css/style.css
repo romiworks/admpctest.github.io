@@ -543,7 +543,8 @@ button {
     margin: 0 auto;
     text-align: center;
 	padding-bottom: 30px;
-	margin-top: -30px
+	margin-top: -30px;
+	z-index: 9999;
 }
 
 .project_section {
@@ -804,6 +805,19 @@ textarea#comment.massage-bt::placeholder {
 .send_bt a:hover {
     color: #000;
     background-color: #ffffff;
+}
+
+form button {
+    width: 30%;
+    float: left;
+    background-color: #041d2c;
+    color: #fffdf6;
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 0px;
+}
 }
 
 .footer_section {

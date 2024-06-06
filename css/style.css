@@ -204,7 +204,7 @@ blockquote {
     padding: 30px;
 }
 
-button {
+.button {
     border: 0;
     margin: 0;
     padding: 0;
@@ -218,7 +218,7 @@ button {
 
 .layout_padding {
     padding-top: 90px;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
 }
 
 .header_section {
@@ -242,12 +242,13 @@ button {
 	margin-bottom: 0px;
 }
 
+/* nav menu start here */
 .menu_text {
     width: 100%;
     float: left;
+	margin-top: 15px;
 }
 
-/* nav menu */
 .menu_text li {
     float: left; /* this next in line */
     padding-right: 10px;
@@ -268,6 +269,7 @@ button {
     color: #e05306;
 	transition: 0.5s;
 }
+/* nav menu  here */
 
 .banner_section {
     width: 100%;
@@ -319,7 +321,7 @@ button {
 }
 
 .carousel-control-next-icon {
-    background-image: url(../images/right-aero.png);
+    background-image: url(images/right-aero.png);
 }
 
 .toggle_menu {
@@ -328,10 +330,14 @@ button {
     left: 125px;
 }
 
+.toggle_menu:hover {
+	background-image: url("images/toggle.png");
+}
+
 .logo {
     position: relative;
     left: -83px;
-    /* top: -5px; */
+    top: 10px;
 }
 
 .round {
@@ -403,12 +409,16 @@ button {
     padding-top: 12px;
 }
 
+.contact_bt:hover {
+	background-color: #000000;
+}
+
 .contact_bt a {
     color: #ffffff;
 }
 
 .contact_bt a:hover {
-    color: #000000;
+    color: #ffffff;
 }
 
 .get_bt {
@@ -511,7 +521,7 @@ button {
     font-size: 18px;
     color: #090a0b;
     margin-left: 0px;
-    text-align: center;
+    text-align: center;_text
     font-weight: bold;
     margin-top: 10px;
 }
@@ -543,8 +553,7 @@ button {
     margin: 0 auto;
     text-align: center;
 	padding-bottom: 30px;
-	margin-top: -30px;
-	z-index: 9999;
+	margin-top: -30px
 }
 
 .project_section {
@@ -615,7 +624,7 @@ button {
     text-align: center;
     font-size: 40px;
     color: #0b0e13;
-    border-bottom: 1px solid #e05306;
+    border-bottom: 5px solid #e05306;
     text-align: center;
 }
 
@@ -807,26 +816,14 @@ textarea#comment.massage-bt::placeholder {
     background-color: #ffffff;
 }
 
-form button {
-    width: 30%;
-    float: left;
-    background-color: #041d2c;
-    color: #fffdf6;
-    text-align: center;
-    padding: 50px 0px;
-    font-size: 18px;
-    border-radius: 10px;
-    margin-left: 0px;
-}
-}
-
-.footer_section {
+.footer_section_2 {
     width: 100%;
     float: left;
     background-color: #1c1d1d;
     height: auto;
     margin-top: -8px;
-    padding-bottom: 80px;
+	padding-top: 10px;
+    padding-bottom: 0px;
 }
 
 .input-group>.input-group-append>.btn,
@@ -870,7 +867,7 @@ form button {
     text-align: center;
     font-size: 30px;
     color: #fcf8f9;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
     padding-top: 25px;
 }
 
@@ -900,8 +897,6 @@ form button {
     width: 15%;
     margin: 0 auto;
     text-align: center;
-}
-
 }
 
 .social_icon ul {
@@ -1000,10 +995,43 @@ form button {
 
 .image_7b {
     width: 100%;
+	height: 100%
     float: left;
     text-align: center;
 	margin-top: 10px;
-	border-radius: 30px;
+    /* border-style: solid;
+	border-radius: 10px;
+    border-width: 1px;
+    border-color: #000; */
+}
+
+.image_7c {
+    width: 100%;
+    float: left;
+    text-align: center;
+	margin-top: 10px;
+    /* border-style: solid;
+	border-radius: 10px;
+    border-width: 1px;
+    border-color: #000; */
+}
+
+.image_7c :hover {
+    transform: scale(100%);
+    border-width: 0.5px;
+    border-color: #e05306;
+    border-style: none;
+    border-radius: none;
+    filter: blur(0.5px) grayscale(50%);
+}
+
+.image_7b:hover {
+    transform: scale(105%);
+    border-width: 0.5px;
+    border-color: #e05306;
+    border-style: solid;
+    border-radius: 10px;
+    filter: blur(0.5px) grayscale(50%);
 }
 
 .overlay {
@@ -1017,12 +1045,6 @@ form button {
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-}
-
-.menu_text {
-    width: 100%;
-    float: left;
-    /* margin-top: 20px; */
 }
 
 .overlay .closebtn {
@@ -1136,3 +1158,134 @@ img.client-logo{
 img.burger:hover{
 	background-image: url("images/togglehover.png")
 }
+.form-group button{
+	width: 25%;
+    margin-top: 0px;
+    padding: 10px 0;
+    background: #000;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover{
+    background: white;
+    color: black;
+
+}
+
+/*-- nav start here **/
+
+nav a{
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #898989;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 0 10px;
+	margin:  0 0px;
+	position: relative;
+}
+
+nav a:hover{
+	color: #fff;
+}
+
+nav a::before{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background-color: #EE0653;
+	transition: all .5s;
+}
+
+nav a:hover::before{
+	width: 100%;
+}
+
+/** dropdown menu start here **/
+
+.col-lg-4 .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    margin-left: 210px;
+    margin-top: -160px;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.col-lg-4:hover .dropdown-content {
+    display: block;
+}
+
+.col-lg-4 .dropdown-content a:hover {
+    background-color: #e05306;
+}
+
+/** transit **/
+
+.col-lg-4 .dropdown-content5 {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    margin-left: 210px;
+    margin-top: -205px;
+    border-radius: 10px;
+}
+
+.dropdown-content5 a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.col-lg-4:hover .dropdown-content5 {
+    display: block;
+}
+
+.col-lg-4 .dropdown-content5 a:hover {
+    background-color: #e05306;
+}
+/* .col-lg-4:hover {
+	color: #e05306;
+	transition: 0.5s; 
+} */
+
+/* For desktop: */
+/* .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones:
+  [class*="col-"] {
+    width: 100%;
+  }
+} */
